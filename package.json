@@ -1,6 +1,6 @@
 {
   "name": "nanocyte-component-clear-if-length-greater-than-max-else-pass-through",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Nanocyte component clear-if-length-greater-than-max-else-pass-through",
   "keywords": [
     "nanocyte",

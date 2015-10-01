@@ -48,3 +48,19 @@ describe 'ClearIfLengthGreaterThanMaxElsePassThrough', ->
           config:
             max: 1
         expect(@sut.onEnvelope envelope).to.deep.equal []
+
+    describe 'when max is 0', ->
+      it 'should return the message', ->
+        envelope =
+          message: [1,2]
+          config:
+            max: 0
+        expect(@sut.onEnvelope envelope).to.deep.equal [1,2]
+
+    describe 'when max is undefined', ->
+      it 'should return the message', ->
+        envelope =
+          message: [1,2]
+          config:
+            max: undefined
+        expect(@sut.onEnvelope envelope).to.deep.equal [1,2]
