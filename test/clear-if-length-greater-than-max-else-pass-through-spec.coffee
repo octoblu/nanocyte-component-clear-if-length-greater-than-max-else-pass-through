@@ -1,9 +1,9 @@
 ReturnValue = require 'nanocyte-component-return-value'
-ClearIfLengthGreaterThanMaxElsePassthrough = require '../src/clear-if-length-greater-than-max-else-passthrough'
+ClearIfLengthGreaterThanMaxElsePassThrough = require '../src/clear-if-length-greater-than-max-else-pass-through'
 
-describe 'ClearIfLengthGreaterThanMaxElsePassthrough', ->
+describe 'ClearIfLengthGreaterThanMaxElsePassThrough', ->
   beforeEach ->
-    @sut = new ClearIfLengthGreaterThanMaxElsePassthrough
+    @sut = new ClearIfLengthGreaterThanMaxElsePassThrough
 
   it 'should exist', ->
     expect(@sut).to.be.an.instanceOf ReturnValue

@@ -1,7 +1,7 @@
 ReturnValue = require 'nanocyte-component-return-value'
 _ = require 'lodash'
 
-class ClearIfLengthGreaterThanMaxElsePassthrough extends ReturnValue
+class ClearIfLengthGreaterThanMaxElsePassThrough extends ReturnValue
   onEnvelope: (envelope) =>
     {config,message} = envelope
 
@@ -9,4 +9,4 @@ class ClearIfLengthGreaterThanMaxElsePassthrough extends ReturnValue
     return [] if config.max < _.size(message)
     return message
 
-module.exports = ClearIfLengthGreaterThanMaxElsePassthrough
+module.exports = ClearIfLengthGreaterThanMaxElsePassThrough
