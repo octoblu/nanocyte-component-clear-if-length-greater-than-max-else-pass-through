@@ -25,6 +25,14 @@ describe 'ClearIfLengthGreaterThanMaxElsePassThrough', ->
             max: 1
         expect(@sut.onEnvelope envelope).to.deep.equal []
 
+    describe 'when max is the length of message', ->
+      it 'should return an empty message', ->
+        envelope =
+          message: [1,2]
+          config:
+            max: 2
+        expect(@sut.onEnvelope envelope).to.deep.equal []
+
     describe 'when message is null', ->
       it 'should return an empty message', ->
         envelope =
