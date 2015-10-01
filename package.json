@@ -1,14 +1,14 @@
 {
-  "name": "nanocyte-component-clear-if-length-greater-than-min-else-passthrough",
+  "name": "nanocyte-component-clear-if-length-greater-than-max-else-passthrough",
   "version": "1.0.0",
-  "description": "Nanocyte component clear-if-length-greater-than-min-else-passthrough",
+  "description": "Nanocyte component clear-if-length-greater-than-max-else-passthrough",
   "keywords": [
     "nanocyte",
     "octoblu",
     "meshblu"
   ],
-  "homepage": "https://github.com/octoblu/nanocyte-component-clear-if-length-greater-than-min-else-passthrough",
-  "bugs": "https://github.com/octoblu/nanocyte-component-clear-if-length-greater-than-min-else-passthrough/issues",
+  "homepage": "https://github.com/octoblu/nanocyte-component-clear-if-length-greater-than-max-else-passthrough",
+  "bugs": "https://github.com/octoblu/nanocyte-component-clear-if-length-greater-than-max-else-passthrough/issues",
   "author": {
     "name": "Octoblu",
     "url": "https://github.com/octoblu"
@@ -16,13 +16,14 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/octoblu/nanocyte-component-clear-if-length-greater-than-min-else-passthrough.git"
+    "url": "https://github.com/octoblu/nanocyte-component-clear-if-length-greater-than-max-else-passthrough.git"
   },
   "scripts": {
     "test": "istanbul cover _mocha -- -R spec"
   },
   "dependencies": {
     "coffee-script": "^1.10.0",
+    "lodash": "^3.10.1",
     "nanocyte-component-return-value": "^1.0.0"
   },
   "devDependencies": {
