@@ -6,9 +6,13 @@ class ClearIfLengthGreaterThanMaxElsePassThrough extends ReturnValue
     {config,message} = envelope
 
     return [] unless _.isArray message
-    return message unless config.max?
-    return message if config.max == 0
-    return message if _.size(message) < config.max
+    {max} = config
+    return message unless max?
+    max = parseInt max
+    
+    return message if _.isNaN max
+    return message if max == 0
+    return message if _.size(message) < max
     return []
 
 module.exports = ClearIfLengthGreaterThanMaxElsePassThrough
